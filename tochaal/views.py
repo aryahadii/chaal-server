@@ -1,10 +1,10 @@
 from django.conf import settings
 from django.core.paginator import Paginator
+from rest_framework import exceptions, generics, viewsets
 
+from tochaal.serializers import SubchaalSerializer
 from .models import Subchaal, Thread
 from .serializers import ThreadOverviewSerializer
-from rest_framework import exceptions, generics, viewsets
-from tochaal.serializers import SubchaalSerializer
 
 
 class SubchaalsViewSet(viewsets.ReadOnlyModelViewSet):
