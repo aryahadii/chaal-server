@@ -8,7 +8,6 @@ ALLOWED_HOSTS = ['*']
 
 DEBUG = True
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -20,8 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'explore',
-    'post',
+    'tochaal',
 ]
 
 MIDDLEWARE = [
@@ -35,7 +33,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'konj.urls'
+ROOT_URLCONF = 'chaal.urls'
 
 TEMPLATES = [
     {
@@ -53,8 +51,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'konj.wsgi.application'
-
+WSGI_APPLICATION = 'chaal.wsgi.application'
 
 # Database
 
@@ -65,24 +62,27 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.'
+        'UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 
@@ -91,7 +91,6 @@ TIME_ZONE = 'Asia/Tehran'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 
@@ -102,5 +101,4 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = True
 
 
-# Explore
-POSTS_IN_PAGE = 2
+THREADS_IN_PAGE = 2

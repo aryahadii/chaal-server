@@ -3,7 +3,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
-    url(r'^explore/', include('explore.urls')),
-    url(r'^post/', include('post.urls')),
+    url(r'^tochaal/', include('tochaal.urls')),
 ]
